@@ -1,0 +1,11 @@
+Package: descriptiveStats
+Title: Descriptive Statistics Functions
+Version: 0.1.0
+Authors@R: 
+    person("Steven", "Bullivant", role = c("aut", "cre"))
+Description: Provides basic descriptive statistics functions including mean, median, mode, quartiles, and interquartile range with robust handling of edge cases.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
