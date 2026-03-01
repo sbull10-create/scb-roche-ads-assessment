@@ -1,3 +1,58 @@
+################################################################################
+# Program Name:        02_create_ds_domain.R
+#
+# Study:               NA
+# Sponsor:             NA
+#
+# Purpose:             Derive SDTM DS (Disposition) domain dataset from raw
+#                      data sources using pharmaverse and sdtm.oak framework.
+#
+# Description:
+#   - Reads raw DM, DS, and EC datasets
+#   - Generates OAK ID variables
+#   - Derives reference start/end dates using oak_cal_ref_dates()
+#   - Maps controlled terminology (DSDECOD, VISIT, VISITNUM)
+#   - Derives ISO 8601 date/time variables
+#   - Assigns sequence variable (DSSEQ)
+#   - Derives study day (DSSTDY)
+#   - Outputs finalized SDTM DS dataset
+#
+# Input Files:
+#   - sdtm_ct.csv                  (SDTM Controlled Terminology)
+#   - pharmaverseraw::dm_raw       (Raw DM dataset)
+#   - pharmaverseraw::ds_raw       (Raw DS dataset)
+#   - pharmaverseraw::ec_raw       (Raw EC dataset)
+#
+# Output:
+#   - ds (Final SDTM DS domain dataset)
+#
+# Key Derivations:
+#   - RFXSTDTC (Reference Start Date)
+#   - DSSTDTC  (Disposition Start Date)
+#   - DSDTC    (Disposition Date/Time)
+#   - DSSEQ    (Sequence variable)
+#   - DSSTDY   (Study Day)
+#
+# Controlled Terminology:
+#   - C66727 (DSDECOD)
+#   - VISIT
+#   - VISITNUM
+#
+# Dependencies:
+#   - pharmaverseraw
+#   - sdtm.oak
+#   - admiral
+#   - tidyverse
+#   - stringr
+#
+# Author:              Steven Bullivant
+# Created:             01-MAR-2026
+# Last Modified:       01-MAR-2026
+#
+# Validation Status:   Production
+#
+################################################################################
+
 rm(list = ls())
 
 library("pharmaverseraw")
