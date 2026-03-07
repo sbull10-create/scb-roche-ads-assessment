@@ -18,9 +18,9 @@ Output dataset: `adsl_final`
 
 ## Repository Structure
 
-/ADSL
-│
-├── adsl_derivation.R   # Main ADSL derivation script
+/question_3_adam
+├── create_adsl.R   # Main ADSL derivation script
+├── derive_vars_extreme_event.R   # Attempt to run derive_vars_extreme event function that was not used in actual code due to issues 
 └── README.md           # Project documentation
 
 ---

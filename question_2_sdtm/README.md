@@ -20,7 +20,7 @@ The final output is a submission-ready SDTM DS dataset.
 
 /DS
 │
-├── ds_sdtm_derivation.R   # Main derivation script  
+├── 02_create_ds_domain.R   # Main derivation script  
 ├── sdtm_ct.csv            # SDTM controlled terminology  
 └── README.md              # Project documentation  
 

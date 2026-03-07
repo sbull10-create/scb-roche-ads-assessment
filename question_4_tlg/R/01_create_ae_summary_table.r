@@ -1,5 +1,5 @@
 ################################################################################
-# Program Name:    q4_summary_table.r
+# Program Name:    01_create_ae_summary_table.r
 #
 # Purpose:
 #   Generate a hierarchical summary table of Treatment-Emergent Adverse Events
@@ -25,7 +25,7 @@
 #   - ACTARM   : Actual Treatment Arm
 #
 # Output:
-#   - question_4_tlg/teae_summary.html
+#   - question_4_tlg/ae_summary_table.html
 #
 # Methods:
 #   - Distinct subject counting for SOC and PT levels
@@ -105,10 +105,12 @@ tbl_teae <- adae_teae_sorted %>%
     id = USUBJID,
     denominator = adsl_saf,
     overall_row = TRUE,
-    label = "..ard_hierarchical_overall.." ~ "Treatment Emergent AEs"
+    label = list(AESOC ~ "System Organ Class",
+                 AETERM ~ "Reported Term for the Adverse Event",
+    "..ard_hierarchical_overall.." ~ "Treatment Emergent AEs")
   ) %>% 
   sort_hierarchical()
 
 tbl_teae %>% 
   as_gt() %>% 
-  gt::gtsave("question_4_tlg/output/q4_teae_summary.html")
+  gt::gtsave("question_4_tlg/output/ae_summary_table.html")
