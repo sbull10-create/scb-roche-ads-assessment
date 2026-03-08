@@ -13,24 +13,26 @@ The scripts generate:
 
 All outputs are saved in the output folder.
 
-## Folder Structure
-
-question_4_tlg/
-
-R/
-01_create_ae_summary_table.R
-02_create_visualizations_01.R
-02_create_visualizations_02.R
-03_create_listings.R
-
-output/
-ae_summary_table.html
-ae_severity_distribution.png
-ae_top_10_fp.png
-ae_listings.html
-
-README.md
-
+question_4_tlg
+│
+├── R/
+│   Contains the R scripts used to generate adverse event tables,
+│   listings, and visualisations.
+│   ├── 01_create_ae_summary_table.R
+│   ├── 02_create_visualizations_01.R
+│   ├── 02_create_visualizations_02.R
+│   └── 03_create_listings.R
+│
+├── output/
+│   Contains generated outputs produced by the scripts.
+│   ├── ae_summary_table.html
+│   ├── ae_severity_distribution.png
+│   ├── ae_top_10_fp.png
+│   └── ae_listings.html
+│
+└── README.md
+    Documentation describing the scripts and outputs.
+    
 ## Scripts
 
 01_create_ae_summary_table.R
