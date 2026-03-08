@@ -13,25 +13,39 @@ The scripts generate:
 
 All outputs are saved in the output folder.
 
+## Folder Structure
+
 question_4_tlg
 │
-├── R/
-│   Contains the R scripts used to generate adverse event tables,
-│   listings, and visualisations.
-│   ├── 01_create_ae_summary_table.R
-│   ├── 02_create_visualizations_01.R
-│   ├── 02_create_visualizations_02.R
-│   └── 03_create_listings.R
+├── R
+│   Contains scripts used to generate adverse event tables, listings,
+│   and visualisations.
 │
-├── output/
-│   Contains generated outputs produced by the scripts.
+│   ├── 01_create_ae_summary_table.R
+│   │   Script used to generate the summary table of treatment-emergent
+│   │   adverse events using the {gtsummary} package.
+│   │
+│   ├── 02_create_visualizations_01.R
+│   │   Script used to generate the adverse event severity distribution
+│   │   plot by treatment group.
+│   │
+│   ├── 02_create_visualizations_02.R
+│   │   Script used to generate the plot showing the top 10 most frequent
+│   │   adverse events with confidence intervals.
+│   │
+│   └── 03_create_listings.R
+│       Script used to generate the adverse event listing output.
+│
+├── output
+│   Contains the generated outputs produced by the scripts.
+│
 │   ├── ae_summary_table.html
 │   ├── ae_severity_distribution.png
 │   ├── ae_top_10_fp.png
 │   └── ae_listings.html
 │
 └── README.md
-    Documentation describing the scripts and outputs.
+    Documentation explaining the scripts and how to run them.
     
 ## Scripts
 
