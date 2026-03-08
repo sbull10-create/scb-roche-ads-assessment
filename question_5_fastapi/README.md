@@ -1,5 +1,23 @@
 # Clinical Data API (FastAPI)
 
+## Folder Structure
+
+```
+question_5_fastapi
+│
+├── main.py
+│   FastAPI application implementing the clinical trial data API.
+│   Includes endpoints for dynamic adverse event filtering and
+│   patient safety risk score calculation.
+│
+├── adae.csv
+│   Input dataset used by the API containing adverse event data.
+│
+└── README.md
+    Documentation describing the API and instructions for running
+    the application locally.
+```
+
 ## Setup
 
 Install dependencies:
