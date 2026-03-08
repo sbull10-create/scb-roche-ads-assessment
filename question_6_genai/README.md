@@ -1,5 +1,28 @@
 # GenAI Clinical Data Assistant
 
+## Folder Structure
+
+```
+question_6_genai
+│
+├── clinical_agent.py
+│   Implementation of the ClinicalTrialDataAgent which uses an LLM
+│   to interpret natural language queries and translate them into
+│   structured dataset filters.
+│
+├── test_agent.py
+│   Script used to run example queries demonstrating how the
+│   GenAI clinical data assistant processes questions and
+│   retrieves matching subjects.
+│
+├── adae.csv
+│   Input dataset used for querying adverse event data.
+│
+└── README.md
+    Documentation describing the agent workflow and how to
+    run the example queries.
+```
+
 ## Setup
 
 Install dependencies:
