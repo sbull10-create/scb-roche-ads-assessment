@@ -16,13 +16,18 @@ The final output is a submission-ready SDTM DS dataset.
 
 ---
 
-## Repository Structure
+## Folder Structure
 
-/question_2_sdtm
+```text
+question_2_sdtm
 │
-├── 02_create_ds_domain.R   # Main derivation script  
-├── sdtm_ct.csv            # SDTM controlled terminology  
-└── README.md              # Project documentation  
+├── 02_create_ds_domain.R
+│   Main script used to create the SDTM DS (Disposition) domain dataset
+│   from the raw clinical trial data using the {sdtm.oak} package.
+│
+└── README.md
+    Documentation explaining the purpose of the script and how to run it.
+```
 
 ---
 
