@@ -16,12 +16,29 @@ Output dataset: `adsl_final`
 
 ---
 
-## Repository Structure
+## Folder Structure
 
-/question_3_adam
-├── create_adsl.R   # Main ADSL derivation script
-├── derive_vars_extreme_event.R   # Attempt to run derive_vars_extreme event function that was not used in actual code due to issues 
-└── README.md           # Project documentation
+```text
+question_3_adam
+│
+├── create_adsl.R
+│   Main script used to generate the ADSL (Subject-Level Analysis Dataset)
+│   using SDTM input datasets and functions from the {admiral} package.
+│
+├── derive_vars_extreme_event.R
+│   Helper function used to derive subject-level flags based on event-level
+│   data (e.g., identifying patients meeting specific criteria).
+│
+└── README.md
+    Documentation explaining the purpose of the scripts and how to run them.
+```
+
+## Script Overview
+
+### create_adsl.R
+
+This is the primary script used to derive the **ADSL dataset** from SDTM sour
+
 
 ---
 
