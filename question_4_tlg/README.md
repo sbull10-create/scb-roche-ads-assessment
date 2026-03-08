@@ -15,6 +15,7 @@ All outputs are saved in the output folder.
 
 ## Folder Structure
 
+```
 question_4_tlg
 │
 ├── R
@@ -46,6 +47,7 @@ question_4_tlg
 │
 └── README.md
     Documentation explaining the scripts and how to run them.
+```
     
 ## Scripts
 
