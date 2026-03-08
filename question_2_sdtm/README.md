@@ -18,7 +18,7 @@ The final output is a submission-ready SDTM DS dataset.
 
 ## Repository Structure
 
-/DS
+/question_2_sdtm
 │
 ├── 02_create_ds_domain.R   # Main derivation script  
 ├── sdtm_ct.csv            # SDTM controlled terminology  
