@@ -28,12 +28,7 @@ descriptiveStats
 │
 ├── R/
 │   Contains the implementation of the descriptive statistics functions.
-│   ├── calc_mean.R
-│   ├── calc_median.R
-│   ├── calc_mode.R
-│   ├── calc_q1.R
-│   ├── calc_q3.R
-│   └── calc_iqr.R
+│   └── descriptive_functions.R
 │
 ├── man/
 │   Automatically generated documentation files created using roxygen2.
